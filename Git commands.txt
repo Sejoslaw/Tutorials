@@ -1,0 +1,19 @@
+git clone username@host:/path/to/repository
+git clone https://github.com/Sejoslaw/Tutorials.git
+
+
+git add *
+
+
+Commit changes to head (but not yet to the remote repository):
+git commit -m "Commit message"
+
+
+Commit any files you've added with git add, and also commit any files you've changed since then:
+git commit -a
+
+
+Send changes to the master branch of your remote repository:
+git push origin master
+
+
