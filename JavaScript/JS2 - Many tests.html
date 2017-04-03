@@ -1,0 +1,109 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<!--
+		Change picture.
+		-->
+		<button onClick="document.getElementById('pic').src = 'http://www.multielektronik.pl/produkty/618_20090206_215940_d.jpg'">Pic 1</button>
+		<img id="pic" src="http://www.multielektronik.pl/produkty/618_20090206_215940_d.jpg" style="width:200px">
+		<button onClick="document.getElementById('pic').src = 'https://i.wpimg.pl/730x0/m.autokult.pl/led-2072038e70fe5ac8a807fb04fb5d.jpg'">Pic 2</button>
+		<br>
+		<!--
+		Change the font size of some text.
+		-->
+		<h2 id="text">Text to change size.</h2>
+		<br>
+		<button onClick="document.getElementById('text').style.fontSize = '100px'">Size 100px</button>
+		<button onClick="document.getElementById('text').style.fontSize = '150px'">Size 150px</button>
+		<br>
+		<!--
+		Hide / show text
+		-->
+		<button onClick="document.getElementById('text').style.display = 'none'">Hide text</button>
+		<button onClick="document.getElementById('text').style.display = 'block'">Show text</button>
+		<br>
+		<!--
+		Function
+		-->
+		<script>
+			function changeParagraph()
+			{
+				document.getElementById("par").innerHTML = "Paragraph changed.";
+			}
+		</script>
+		<h2 id="par">Paragraph</h2>
+		<button onClick="changeParagraph()">Change</button>
+		<br>
+		<!--
+		Use external script
+		-->
+		<h2 id="useExternal">Use external script</h2>
+		<script src="ExternalScript.js"></script>
+		<button onClick="externalFunction()">Use external script</button>
+		<button onClick="document.getElementById('useExternal').innerHTML = 'Use external script'">Set to new text</button>
+		<br>
+		<!--
+		Write something into HTMl
+		-->
+		<script>
+			document.write(1 + 2);
+			document.write(" Written");
+		</script>
+		<br>
+		<!--
+		Add something
+		-->
+		<button onClick="document.write(1 + 2)">Write</button>
+		<br>
+		<!--
+		Alert
+		-->
+		<button onClick="window.alert(1 + 2)">Alert</button>
+		<br>
+		<!--
+		Console log
+		-->
+		<button onClick="console.log(1 + 2)">Log</button>
+		<br>
+		<!--
+		Use variables
+		-->
+		<p id="variableTest"></p>
+		<script>
+			var name = "Krzysiek";
+			document.getElementById('variableTest').innerHTML = name;
+		</script>
+		<!--
+		Array
+		-->
+		<p id="arrayTest"></p>
+		<script>
+			var cars = ["Saab","Volvo","BMW"];
+			document.getElementById("arrayTest").innerHTML = cars[0];
+		</script>
+		<!--
+		Object
+		-->
+		<p id="objectTest"></p>
+		<script>
+			var person = 
+			{
+				firstName : "Krzysiek",
+				age       : 23
+			};
+			
+			document.getElementById("objectTest").innerHTML = person.firstName + " is " + person.age + " years old.";
+		</script>
+		<!--
+		Typeof
+		-->
+		<p id="typeofTest"></p>
+		<script>
+			document.getElementById("typeofTest").innerHTML = 
+				typeof "" + "<br>" +
+				typeof "Krzysiek" + "<br>" + 
+				typeof 6;
+		</script>
+	</body>
+</html>
