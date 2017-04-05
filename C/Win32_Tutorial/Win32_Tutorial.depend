@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1490982868 source:c:\users\krzysztof\desktop\programy\workspace_codeblocks\win32_game\main.c
+	"main.h"
+	"OpenGL.h"
+
+1490982901 c:\users\krzysztof\desktop\programy\workspace_codeblocks\win32_game\main.h
+
+1490982748 c:\users\krzysztof\desktop\programy\workspace_codeblocks\win32_game\opengl.h
+	<windows.h>
+	<GL/gl.h>
+	<GL/glext.h>
+	<GL/glu.h>
+
+1490982796 source:c:\users\krzysztof\desktop\programy\workspace_codeblocks\win32_game\opengl.c
+	"OpenGL.h"
+
