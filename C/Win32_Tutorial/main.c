@@ -77,7 +77,7 @@ int WINAPI WinMain(HINSTANCE hInstance,
 
             SwapBuffers(hDC);
             theta += 1.0f;
-            Sleep (1);
+            Sleep(1);
         }
     }
 
@@ -101,12 +101,7 @@ LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
             return 0;
         case WM_KEYDOWN:
         {
-            switch(wParam)
-            {
-                case VK_ESCAPE:
-                    PostQuitMessage(0);
-                break;
-            }
+            HandleKeyPressed(wParam);
         }
             break;
         default:

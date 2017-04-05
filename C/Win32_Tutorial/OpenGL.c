@@ -16,3 +16,13 @@ void Render(float theta)
 
     glPopMatrix();
 }
+
+void HandleKeyPressed(WPARAM wParam)
+{
+    switch(wParam)
+    {
+        case VK_ESCAPE:
+            PostQuitMessage(0);
+            break;
+    }
+}
