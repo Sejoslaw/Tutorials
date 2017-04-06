@@ -14,10 +14,10 @@
 1490982796 source:c:\users\krzysztof\desktop\programy\workspace_codeblocks\win32_game\opengl.c
 	"OpenGL.h"
 
-1491410579 source:c:\users\krzysztof\git\tutorials\c\win32_tutorial\opengl.c
+1491477995 source:c:\users\krzysztof\git\tutorials\c\win32_tutorial\opengl.c
 	"OpenGL.h"
 
-1491410708 c:\users\krzysztof\git\tutorials\c\win32_tutorial\opengl.h
+1491477786 c:\users\krzysztof\git\tutorials\c\win32_tutorial\opengl.h
 	<windows.h>
 	<GL/gl.h>
 	<GL/glext.h>
