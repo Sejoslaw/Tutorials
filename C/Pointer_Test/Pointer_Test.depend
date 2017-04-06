@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1491489585 source:c:\users\krzysztof\git\tutorials\c\pointer_test\main.c
+	<stdio.h>
+	<stdlib.h>
+
