@@ -100,10 +100,37 @@
 		-->
 		<p id="typeofTest"></p>
 		<script>
+			var person = 
+			{
+				firstName : "Krzysiek",
+				age       : 23
+			};
+			
 			document.getElementById("typeofTest").innerHTML = 
 				typeof "" + "<br>" +
-				typeof "Krzysiek" + "<br>" + 
-				typeof 6;
+				typeof "Krzysiek" + "<br>" +
+				typeof 6 + "<br>" +
+				typeof person + "<br>" +
+				typeof function myFunction(){} + "<br>";
+		</script>
+		<!--
+		Equasion:
+					0 == false   // true
+					0 === false  // false, because they are of a different type
+					1 == "1"     // true, automatic type conversion for value only
+					1 === "1"    // false, because they are of a different type
+					null == undefined // true
+					null === undefined // false
+					'0' == false // true
+					'0' === false // false
+		-->
+		<p id="equasionTest"></p>
+		<script>
+			document.getElementById("equasionTest").innerHTML = null == undefined; <!--  -->
+		</script>
+		<p id="3equasionTest"></p>
+		<script>
+			document.getElementById("3equasionTest").innerHTML = null === undefined; <!--  -->
 		</script>
 	</body>
 </html>

@@ -1,0 +1,48 @@
+<html>
+	<head>
+	</head>
+	<body>
+		<!--
+		Function example
+		-->
+		<p id="multiply"></p>
+		<script>
+			var x = multiply(3, 4);
+
+			function multiply(a, b) 
+			{
+				return a * b;
+			}
+
+			document.getElementById("multiply").innerHTML = x;
+		</script>
+		<!--
+		Function example 2
+		-->
+		<p id="multiply2"></p>
+		<script>
+			function toCelsius(fahrenheit)
+			{
+				return (5/9) * (fahrenheit-32);
+			}
+			
+			document.getElementById("multiply2").innerHTML = toCelsius(77);
+		</script>
+		<!--
+		Function example 3
+		-->
+		<p id="multiply3"></p>
+		<script>
+			function toCelsius(fahrenheit)
+			{
+				return (5/9) * (fahrenheit-32);
+			}
+			
+			document.getElementById("multiply3").innerHTML = toCelsius;
+		</script>
+		<!--
+		Button changes itself
+		-->
+		<button onClick="this.innerHTML = 'Local time is: ' + Date()">Get Time</button>
+	</body>
+</html>
