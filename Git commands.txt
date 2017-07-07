@@ -1,19 +1,45 @@
+Git First Init:
+
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
+git config --list
+
+========================================
+
 git clone username@host:/path/to/repository
-git clone https://github.com/Sejoslaw/Tutorials.git
+git clone https://Web.Page/With/Git.git  <- with .git at the end
+git clone file:////192.168.0.6/htdocs/somerepo.git
+git clone //192.168.2.101/projectName.git
+git clone https://Username@Web.Page/Git/Repo.git
 
-
-git add *
-
+========================================
 
 Commit changes to head (but not yet to the remote repository):
 git commit -m "Commit message"
 
-
 Commit any files you've added with git add, and also commit any files you've changed since then:
 git commit -a
 
-
 Send changes to the master branch of your remote repository:
 git push origin master
+git push
 
+Show remote branch (base branch)
+git remote -v
 
+Check and download latest changes from remote branch
+git pull
+
+========================================
+
+.gitignore
+
+*.txt - All txt files
+/build - whole folder "build"
+# Comment
+
+========================================
+
+Convert remote repository to bare repository (there is no working copy in the bare repository - 
+the folder contains only the actual repository data).
+git config --bool core.bare true
