@@ -43,3 +43,25 @@ git pull
 Convert remote repository to bare repository (there is no working copy in the bare repository - 
 the folder contains only the actual repository data).
 git config --bool core.bare true
+
+========================================
+
+Links:
+https://git-scm.com/  <--- Main Download
+https://www.kernel.org/pub/software/scm/git/docs/user-manual.html
+https://stackoverflow.com/questions/11117823/git-push-error-refusing-to-update-checked-out-branch
+https://stackoverflow.com/questions/7704480/why-does-git-commit-not-save-my-changes
+https://stackoverflow.com/questions/2816369/git-push-error-remote-rejected-master-master-branch-is-currently-checked
+https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+https://git-scm.com/book/en/v2/Getting-Started-About-Version-Control
+https://shapeshed.com/setting-up-git-for-multiple-developers/
+https://www.slideshare.net/HubSpot/git-101-git-and-github-for-beginners
+
+
+Top used sites:
+https://github.com/
+https://bitbucket.org/
+
+
+Gitignores:
+https://github.com/github/gitignore
